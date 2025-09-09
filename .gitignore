@@ -29,3 +29,16 @@ publish/
 
 # Ignore sample data (if not needed)
 # src/Presentation/wwwroot/sample-data/
+
+# Ignore node modules (if using npm/yarn for front-end)
+node_modules/
+
+# Ignore environment files
+.env
+.env.*
+
+# Ignore local database files
+*.db
+
+# Ignore code coverage output
+coverage/
