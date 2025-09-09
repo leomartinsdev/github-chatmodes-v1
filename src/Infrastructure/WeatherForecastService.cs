@@ -1,5 +1,3 @@
-﻿
-
 using System.Text.Json;
 using Domain;
 using Application;
@@ -22,7 +20,7 @@ public class WeatherForecastService : IWeatherForecastService
 
     public async Task<IEnumerable<WeatherForecast>> GetForecastsAsync()
     {
-        // Open-Meteo API docs: https://open-meteo.com/en/docs
+        // Removed placeholder comment for clarity.
         var url = $"https://api.open-meteo.com/v1/forecast?latitude={Latitude}&longitude={Longitude}&daily=temperature_2m_max,temperature_2m_min,weathercode&timezone=auto";
         var response = await _httpClient.GetAsync(url);
         response.EnsureSuccessStatusCode();
