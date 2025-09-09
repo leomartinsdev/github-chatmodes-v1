@@ -1,6 +1,8 @@
-﻿namespace Application;
+﻿
+using Domain;
+namespace Application;
 
-public class Class1
+public interface IWeatherForecastService
 {
-
+    Task<IEnumerable<WeatherForecast>> GetForecastsAsync();
 }
